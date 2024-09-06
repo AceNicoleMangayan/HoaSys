@@ -1,0 +1,112 @@
+body {
+    padding-right: 0px !important;
+}
+.modal-backdrop {
+    background: #2da78e;
+}
+.modal-content {
+    border-radius: unset !important;
+}
+.modal-header{
+    border-radius: unset !important;
+    display: table-cell !important; 
+    vertical-align: top !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+.modal-head{
+    border-bottom:unset !important;
+    padding: 1.2rem 1.2rem 1.1rem 1.2rem !important;
+}
+.modal .modal-content .modal-header {
+    background: unset;
+    padding:unset;
+}
+.modal .modal-content .modal-footer {
+    padding: unset;
+}
+.footer-btn{
+    border-radius: unset;
+    margin-right: unset !important;
+}
+.modal-footer>:not(:first-child) {
+    margin-left: unset !important;
+}
+.modal-header{
+    border-bottom: 2px dashed #ebedf2;
+}
+.modal-header .m-portlet{
+    box-shadow: unset !important;
+    margin-bottom: unset !important;
+}
+.form-control {
+    border-bottom: 1px solid #c7c8d8;
+    border-radius: 3px;
+    background-color: #ebedf254;
+}
+.form-control :focus{
+    outline: none;      /* Remove default outline and use border or box-shadow */
+    box-shadow: none; /* Full freedom. (works also with border-radius) */
+}
+label{
+    font-weight: 400;
+}
+
+/* custom table */
+
+.table thead th{
+    background-color: #f3f6f9;
+    border-bottom: unset !important;
+    position: sticky; 
+    top: -0.1rem !important;
+    z-index: 1;
+}
+.table thead tr{
+    /* position: sticky; 
+    top: 0; 
+    z-index: 1; */
+    border-radius: .42rem;
+    /* background-color: #f3f6f9; */
+    font-weight: 300;
+    color: #b5b5c3!important;
+}
+.table tbody{
+    font-weight: 600;
+    color: #575962;
+}
+.table td {
+    border-top: 1px solid #c4c5d640;
+}
+
+table .m-checkbox span{
+    top: -3px !important;
+}
+
+.m-widget1 {
+    padding: 1rem !important;
+}
+.m-widget1 .m-widget1__item {
+    padding: 1.1rem 1rem !important;
+}
+.mCSB_inside .mCSB_container {
+    margin-right: unset !important;
+}
+.mCSB_scrollTools {
+    width: 2px !important;
+}
+.search_field control:focus {
+    border-color: unset !important;
+    color: #575962;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.search_field {
+    border: 1px solid #ced4da33;
+    border-radius: unset !important;
+    padding: .65rem 1.5rem !important;
+}
+.new_portlet_header{
+    box-shadow: unset !important;
+    margin-bottom: unset !important;
+}

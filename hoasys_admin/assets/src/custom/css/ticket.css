@@ -1,0 +1,28 @@
+.m-content { 
+    font-family: Poppins;
+}
+img.qr_code_css {
+    position: absolute;
+    width: 80px;
+    margin-left: 2.3rem;
+    margin-top: 35px;
+}
+
+
+
+.img-container-block {
+    text-align: center;
+    /* position: inherit; */
+    /* background-image: url(<?php echo base_url("/assets/images/final.jpg")?>); */
+    background-repeat: no-repeat;
+    width: 5.5in !important;
+    height: 2in !important;
+    background-size: cover;
+    margin-bottom: 0.2rem;
+}
+div.emp_name{
+    border:1px solid violet;
+    color:black;
+    font-size:0.8rem;
+    border-radius: 25px;
+}

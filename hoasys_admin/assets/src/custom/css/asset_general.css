@@ -1,0 +1,36 @@
+#subheader_nav.nav-pills .nav-link.active{
+    color: #fff;
+    background-color: #43d2b59c !important;
+}
+#subheader_nav.nav.nav-pills .nav-link{
+    color: #fff !important;
+}
+.text-truncate:hover {
+    text-overflow: clip;
+    white-space: normal;
+    word-break: break-all;
+}
+
+.m-aside-menu .m-menu__nav > .m-menu__item.active {
+    background-color: #232222 !important;
+}
+
+#subheader_nav > li:hover{
+    cursor: pointer;
+}
+/* #delete_item_category:hover {
+    color: #f23454;
+}
+
+#add_item_category:hover {
+    color: #34bfa3;
+} */
+.icon_btn_delete:hover{
+    color: #f23454;
+    cursor: pointer;
+}
+.icon_btn_add:hover{
+    color: #34bfa3;
+    cursor: pointer;
+}
+

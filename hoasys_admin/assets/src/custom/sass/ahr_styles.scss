@@ -1,0 +1,107 @@
+/* MIC2X STYLES ------------------------------------------------------------------------------------------------------ */
+
+.stack-border-left-only {
+    border-top: 0px !important;
+    border-right: 0px !important;
+    border-bottom: 0px !important;
+    border-left: 1px gray solid;
+    background: unset !important;
+}
+
+#checkPersonalRequest:hover {
+    text-decoration: underline;
+}
+
+.dataTables_scrollHead {
+    overflow: visible !important;
+}
+
+.mar7T {
+    margin-top: 7px !important;
+}
+
+.pad10L {
+    padding-left: 10px;
+}
+
+.pad10T {
+    padding-top: 10px;
+}
+
+.pad10B {
+    padding-bottom: 11px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-28 {
+    font-size: 28px;
+}
+
+.font-size-39 {
+    font-size: 39px;
+}
+
+.ahr_quote {
+    border-left: 8px solid #545455 !important;
+    background: hsl(187, 79%, 92%) !important;
+}
+
+.mini_alert{
+    padding: 0.45rem 0.75rem !important;
+}
+
+.ranges {
+    display: unset !important;
+}
+
+#personalAhrPendingDatatable,#personalAhrRecordDatatable {
+    table.m-datatable__table {
+        border: 1px solid #ebedf2 !important;
+    }
+}
+// rendered AHR MODAL
+#renderedAhrFilingForm, #unrederedAhrForm{
+    
+    .stack-no-border {
+        border: 0px !important;
+        background: unset !important;
+    }
+    .stack-border-left-only {
+        border-top: 0px !important;
+        border-right: 0px !important;
+        border-bottom: 0px !important;
+        border-left: 1px gray solid;
+        background: unset !important;
+    }
+    .arrow-div {
+        left: 0;
+        border-top: 10px solid lightpink !important;
+        border-right: 10px solid white !important;
+        border-left: 10px solid lightpink !important;
+        border-bottom: 10px solid white !important;
+    }
+    // .pointer {
+    //     width: 200px;
+    //     height: 40px;
+    //     position: relative;
+    //     background: red;
+    // }
+    // .pointer:before {
+    //     content: "";
+    //     position: absolute;
+    //     right: -20px;
+    //     bottom: 0;
+    //     width: 0;
+    //     height: 0;
+    //     border-left: 20px solid rgb(255, 86, 86);
+    //     border-top: 20px solid transparent;
+    //     border-bottom: 20px solid transparent;
+    // }
+}

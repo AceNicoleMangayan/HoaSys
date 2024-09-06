@@ -1,0 +1,238 @@
+<body>
+<script src="jquery-1.11.3.js"></script>
+<script src="jquery.easing.1.3.js"></script>
+<link href="ezslots.css" rel="stylesheet" type="text/css" />
+
+<style>
+body{
+background-color:white;
+padding:0px;
+margin:0px;
+}
+#ezslots1 .window {
+	font-size:136px;
+	font-family:arial,helvetica,sans-serif;	
+	border:1px solid black;
+	margin-top:40px;
+}#ezslots2 .window {
+	font-size:136px;
+	font-family:arial,helvetica,sans-serif;	
+	border:1px solid black;
+	margin-top:40px;
+}#ezslots3 .window {
+	font-size:136px;
+	font-family:arial,helvetica,sans-serif;	
+	border:1px solid black;
+	margin-top:40px;
+}#ezslots4 .window {
+	font-size:136px;
+	font-family:arial,helvetica,sans-serif;	
+	border:1px solid black;
+	margin-top:40px;
+}
+
+#ezslots5 .window {
+	font-size:136px;
+	font-family:arial,helvetica,sans-serif;	
+	border:1px solid black;
+	margin-top:40px;
+}#ezslots6 .window {
+	font-size:136px;
+	font-family:arial,helvetica,sans-serif;	
+	border:1px solid black;
+	margin-top:40px;
+}#ezslots7 .window {
+	font-size:136px;
+	font-family:arial,helvetica,sans-serif;	
+	border:1px solid black;
+	margin-top:40px;
+}#ezslots8 .window {
+	font-size:136px;
+	font-family:arial,helvetica,sans-serif;	
+	border:1px solid black;
+	margin-top:40px;
+}
+
+.content {
+    background: url(images/blurred-bg-1.jpg) center center;
+    visibility: visible;
+    animation-name: bounceInDown;
+}
+.ezslots {
+    float: left;
+}
+</style>
+<!--<div id="ezslots0"></div>
+<button id="gogogo0">spin</button>
+
+<div id="ezslots2"></div>
+<button id="gogogo2">spin</button>
+<button id="winwinwin2">win</button>-->
+<div style="display: inline-table;">
+ <div id="ezslots1"></div>
+ <div id="ezslots2"></div>
+ <div id="ezslots3"></div>
+ <div id="ezslots4"></div>
+</div>
+
+
+<button id="winwinwin1"> SPIN </button>
+<button id="winwinwin2" hidden>win</button>
+<button id="winwinwin3" hidden>win</button>
+<button id="winwinwin4" hidden>win</button>
+
+<div style="display: inline-table;">
+ <div id="ezslots5"></div>
+ <div id="ezslots6"></div>
+ <div id="ezslots7"></div>
+ <div id="ezslots8"></div>
+</div>
+ 
+
+<button id="winwinwin5" hidden>win</button>
+<button id="winwinwin6" hidden>win</button>
+<button id="winwinwin7" hidden>win</button>
+<button id="winwinwin8" hidden>win</button>
+
+<script>
+
+$(function(){
+	//setting up some sample set sof things we can make a slot machine of
+	var numbers = ['0','1','2','3','4','5','6','7','8','9'];
+ 	var callbackFunction = function(result){
+		alert(JSON.stringify(result));
+	}
+ 	var ezslot1 = new EZSlots("ezslots1",{"reelCount":1,"startingSet":[0,0,0,0],"winningSet":[0],"symbols":numbers,"height":160,"width":160,'time':10000});
+ 	var ezslot2 = new EZSlots("ezslots2",{"reelCount":1,"startingSet":[0,0,0,0],"winningSet":[0],"symbols":numbers,"height":160,"width":160,'time':30000});
+ 	var ezslot3 = new EZSlots("ezslots3",{"reelCount":1,"startingSet":[0,0,0,0],"winningSet":[7],"symbols":numbers,"height":160,"width":160,'time':90000});
+ 	var ezslot4 = new EZSlots("ezslots4",{"reelCount":1,"startingSet":[0,0,0,0],"winningSet":[2],"symbols":numbers,"height":160,"width":160,'time':130000});
+
+	
+    var ezslot5 = new EZSlots("ezslots5",{"reelCount":1,"startingSet":[0,0,0,0],"winningSet":[1],"symbols":numbers,"height":160,"width":160,'time':10000});
+ 	var ezslot6 = new EZSlots("ezslots6",{"reelCount":1,"startingSet":[0,0,0,0],"winningSet":[1],"symbols":numbers,"height":160,"width":160,'time':30000});
+ 	var ezslot7 = new EZSlots("ezslots7",{"reelCount":1,"startingSet":[0,0,0,0],"winningSet":[2],"symbols":numbers,"height":160,"width":160,'time':90000});
+ 	var ezslot8 = new EZSlots("ezslots8",{"reelCount":1,"startingSet":[0,0,0,0],"winningSet":[7],"symbols":numbers,"height":160,"width":160,'time':130000});
+
+ 
+	$("#gogogo1").click(function(){ console.log(ezslot1.spin());});
+	$("#winwinwin1").click(function(){ 
+		console.log(ezslot1.win())
+	$("#winwinwin2").trigger("click");
+	$("#winwinwin3").trigger("click");
+	$("#winwinwin4").trigger("click");
+setTimeout(function(){ 	$("#winwinwin5").trigger("click");}, 5000);
+
+		});
+	$("#winwinwin2").click(function(){ console.log(ezslot2.win())});
+	$("#winwinwin3").click(function(){ console.log(ezslot3.win())});
+	$("#winwinwin4").click(function(){ console.log(ezslot4.win())});
+	
+	$("#winwinwin5").click(function(){ 
+		console.log(ezslot5.win())
+	$("#winwinwin6").trigger("click");
+	$("#winwinwin7").trigger("click");
+	$("#winwinwin8").trigger("click");
+		});
+	
+	$("#winwinwin6").click(function(){ console.log(ezslot6.win())});
+	$("#winwinwin7").click(function(){ console.log(ezslot7.win())});
+	$("#winwinwin8").click(function(){ console.log(ezslot8.win())});
+ 
+ });
+
+</script>
+ <script type="text/javascript">
+    function EZSlots(id,useroptions){
+  var that = this; //keep reference to function for use in callbacks
+  //set some variables from the options, or with defaults.
+  var options = useroptions ? useroptions : {};
+  this.reelCount = options.reelCount ? options.reelCount : 3; //how many reels, assume 3 
+  this.symbols = options.symbols ? options.symbols : ['A','B','C'];
+  this.sameSymbolsEachSlot = true;
+  this.startingSet = options.startingSet;
+  this.winningSet = options.winningSet;
+  this.width = options.width ? options.width : 100;
+  this.height = options.width ? options.height : 100;
+  this.howManySymbolsToAppend = 20; //how many symbols each spin adds
+  this.endingLocation = 7; //location for selected symbol... needs to be a few smaller than howManySymbolsToAppend
+  this.time = options.time ? options.time : 6500;//time in millis for a spin to take
+  this.jqo = $("#"+id); //jquery object reference to main wrapper
+  this.jqoSliders = []; //jquery object reference to strips sliding up and down
+// alert(that.time);
+  //to initialize we construct the correct number of slot windows
+  //and then populate each strip once
+  this.init = function(){
+    this.jqo.addClass("ezslots"); //to get the css goodness
+    //figure out if we are using the same of symbols for each window - assume if the first 
+    //entry of the symbols is not a string we have an array of arrays
+    if(typeof this.symbols[0] != 'string'){
+      this.sameSymbolsEachSlot = false;
+    }
+    //make each slot window
+    for(var i = 0; i < this.reelCount; i++){
+      var jqoSlider = $('<div class="slider"></div>');
+      var jqoWindow = $('<div class="window window_"'+i+'></div>');
+      this.scaleJqo(jqoWindow).append(jqoSlider); //make window right size and put slider in it
+      this.jqo.append(jqoWindow); //add window to main div
+      this.jqoSliders.push(jqoSlider); //keep reference to jqo of slider
+      this.addSymbolsToStrip(jqoSlider,i, false, true); //and add the initial set 
+    }
+  };
+  //convenience function since we need to apply width and height to multiple parts
+  this.scaleJqo = function(jqo){
+    jqo.css("height",this.height+"px").css("width",this.width+"px");
+    return jqo;
+  }
+  //add the various symbols - but take care to possibly add the "winner" as the symbol chosen
+  this.addSymbolsToStrip = function(jqoSlider, whichReel, shouldWin, isInitialCall){
+    var symbolsToUse = that.sameSymbolsEachSlot ? that.symbols : that.symbols[whichReel];
+    var chosen =  shouldWin ? that.winningSet[whichReel] : Math.floor(Math.random()*symbolsToUse.length);
+    for(var i = 0; i < that.howManySymbolsToAppend; i++){
+      var ctr = (i == that.endingLocation) ? chosen : Math.floor(Math.random()*symbolsToUse.length);
+      if(i == 0 && isInitialCall && that.startingSet){
+        ctr = that.startingSet[whichReel];
+      }
+      //we nest "content" inside of "symbol" so we can do vertical and horizontal centering more easily
+      var jqoContent = $("<div class='content'>"+symbolsToUse[ctr]+"</div>");
+      that.scaleJqo(jqoContent);
+      var jqoSymbol = $("<div class='symbol'></div>");
+      that.scaleJqo(jqoSymbol);
+      jqoSymbol.append(jqoContent);
+      jqoSlider.append(jqoSymbol);
+    }
+    return chosen;
+  }
+  //to spin, we add symbols to a strip, and then bounce it down
+  this.spinOne = function(jqoSlider,whichReel,shouldWin){
+    var heightBefore = parseInt(jqoSlider.css("height"), 10); 
+    var chosen = that.addSymbolsToStrip(jqoSlider,whichReel,shouldWin);
+    var marginTop = -(heightBefore + ((that.endingLocation) * that.height));
+    jqoSlider.stop(true,true).animate(
+      {"margin-top":marginTop+"px"},
+      {'duration' : that.time + Math.round(Math.random()*that.height), 'easing' : "easeOutElastic"});
+    return chosen;
+  }
+
+  this.spinAll = function(shouldWin){
+    var results = [];
+    for(var i = 0; i < that.reelCount; i++){
+      results.push(that.spinOne(that.jqoSliders[i],i,shouldWin));
+    }
+    return results;
+  }
+
+  this.init();
+  return {
+    spin : function(){
+      return that.spinAll();
+    },
+    win : function(){
+      return that.spinAll(true);
+    }
+  }
+}
+
+
+
+</script>
+</body>
